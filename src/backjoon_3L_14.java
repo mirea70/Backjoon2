@@ -6,23 +6,27 @@ import java.io.OutputStreamWriter;
 public class backjoon_3L_14 {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-//        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         int N = Integer.parseInt(br.readLine());
         int count = 0;
-        int copy = N;
+        int new_N = N;
         int first = 0;
         int second = 0;
         int sum = 0;
 
-        do {
-            first = N / 10;
-            second = N % 10;
+        while(true) {
+            first = new_N / 10;
+            second = new_N % 10;
             sum = first + second;
-            N = (second * 10) + (sum % 10);
+            new_N = (second * 10) + (sum % 10);
             count++;
-//            if() break;
-        } while(copy != N);
-        System.out.println(count);
+            if(new_N == N) break;
+        }
+//        } while(new_N != N);
+        bw.write(count + "");
+        bw.flush();
+        bw.close();
+//        br.close();
     }
 }

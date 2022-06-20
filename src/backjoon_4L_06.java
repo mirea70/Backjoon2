@@ -6,7 +6,6 @@ public class backjoon_4L_06 {
 //      첫째줄을 입력받아 int N 저장(테스트를 반복할 횟수)
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
-
 //      반복문을 돈다(N번) cnt = 0;
 //      테스트 문자열 저장할 String str 생성
 //      O 점수 저장할 int o

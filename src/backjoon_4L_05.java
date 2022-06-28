@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Arrays;
@@ -18,5 +20,6 @@ public class backjoon_4L_05 {
             score[i] = score[i]/max*100;
         }
         System.out.println(Arrays.stream(score).average().getAsDouble());
+
     }
 }

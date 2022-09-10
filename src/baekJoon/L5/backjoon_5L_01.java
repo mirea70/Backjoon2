@@ -1,4 +1,4 @@
-package baekJoon;
+package baekJoon.L5;
 
 import java.math.BigInteger;
 

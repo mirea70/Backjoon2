@@ -1,4 +1,4 @@
-package baekJoon;
+package baekJoon.L4;
 
 import org.w3c.dom.ls.LSOutput;
 

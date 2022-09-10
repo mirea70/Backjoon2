@@ -1,4 +1,4 @@
-package baekJoon;
+package baekJoon.L3;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

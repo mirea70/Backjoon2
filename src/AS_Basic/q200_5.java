@@ -1,12 +1,16 @@
 package AS_Basic;
 
 import java.io.*;
+import java.util.Scanner;
 
 public class q200_5 {
     public static void main(String[] args) throws IOException {
         // 입출력 전처리
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        Scanner sc = new Scanner(System.in);
+
         // 현재 문자를 cur_str에 담는다
         String str = br.readLine();
         StringBuilder cur_str = new StringBuilder(str);
@@ -36,11 +40,27 @@ public class q200_5 {
                 location++;
             }
         }
+
+//        System.out.println(cur_str.toString());
+        bw.write(cur_str.toString()+ "\n");
+        bw.flush();
+
+        String temp;
+
+        for (int i = 0; i < 3; i++) {
+//            String temp = br.readLine();
+            temp = sc.nextLine();
+//            System.out.println("temp = " + temp);
+            bw.write("temp = " + temp + "\n");
+
+        }
+        bw.flush();
+
         // 입력 반복문 끝
         br.close();
         // cur_str을 출력
-//        bw.write(cur_str.toString());
-        System.out.println(cur_str.toString());
+
+
         bw.close();
     }
 }

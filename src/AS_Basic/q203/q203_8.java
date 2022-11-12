@@ -1,4 +1,4 @@
-package AS_Basic;
+package AS_Basic.q203;
 
 import java.math.BigInteger;
 import java.util.Scanner;

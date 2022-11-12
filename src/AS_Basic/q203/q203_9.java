@@ -1,4 +1,4 @@
-package AS_Basic;
+package AS_Basic.q203;
 
 import java.util.Arrays;
 import java.util.Scanner;
